@@ -1,0 +1,75 @@
+/* *** *** *** Custom Properties *** *** *** */
+:root {
+    --font-family: "Karla", sans-serif;
+    --font-size: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --layout-mobile: 375px;
+    --layout-desktop: 1440px;
+    --color-white: #fff;
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-bright-yellow: hsl(71, 73%, 54%);
+    --color-light-gray: hsl(204, 43%, 93%);
+    --color-grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* *** *** *** Reset *** *** *** */
+html {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-regular);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+a { text-decoration: none; }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+picture { display: block; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+hr {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+/* *** *** *** Site Styles *** *** *** */
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-light-gray);
+}
+
+.main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 5rem 0; 
+}
+
+.footer { padding: 1rem; }
